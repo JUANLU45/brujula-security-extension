@@ -1,0 +1,496 @@
+{
+  "extensionName": {
+    "message": "Brújula Security - Protección Anti-Phishing Cripto",
+    "description": "Nombre de la extensión"
+  },
+  "extensionDescription": {
+    "message": "La primera extensión de seguridad cripto en español. Detecta sitios falsos ANTES de que conectes tu wallet. 100% gratis y privado.",
+    "description": "Descripción de la extensión en Chrome Web Store"
+  },
+  
+  "verified": {
+    "message": "Verificado",
+    "description": "Texto del badge verde"
+  },
+  "verifiedSite": {
+    "message": "Sitio Verificado",
+    "description": "Mensaje de sitio verificado"
+  },
+  
+  "caution": {
+    "message": "⚠️ Precaución",
+    "description": "Título de alerta amarilla"
+  },
+  "cautionTip": {
+    "message": "Nunca compartas tu seed phrase ni contraseñas con nadie.",
+    "description": "Consejo de precaución"
+  },
+  "close": {
+    "message": "Cerrar",
+    "description": "Botón cerrar"
+  },
+  
+  "phishingDetected": {
+    "message": "🚨 POSIBLE PHISHING DETECTADO",
+    "description": "Título de alerta roja"
+  },
+  "typosquattingDetected": {
+    "message": "Este sitio es muy similar a $1. ¿Querías entrar en el sitio oficial?",
+    "description": "Mensaje de typosquatting",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "unknownCryptoSite": {
+    "message": "⚠️ SITIO CRIPTO NO VERIFICADO - Este sitio no está en nuestra base de datos de exchanges y wallets legítimos. Procede con extrema precaución.",
+    "description": "Mensaje de sitio cripto desconocido"
+  },
+  "unknownCryptoWithWallet": {
+    "message": "🚨 PELIGRO: Sitio cripto desconocido pide conectar tu wallet. NUNCA conectes tu wallet a sitios no verificados.",
+    "description": "Mensaje de sitio desconocido con conexión wallet"
+  },
+  "walletConnectionDetected": {
+    "message": "⚠️ Este sitio pide conectar tu wallet. Verifica que sea legítimo antes de conectar.",
+    "description": "Mensaje de conexión wallet detectada"
+  },
+  "walletConnectionNonCrypto": {
+    "message": "⚠️ Este sitio (no especializado en cripto) pide conectar tu wallet. Procede con precaución.",
+    "description": "Mensaje de conexión wallet en sitio no cripto"
+  },
+  "scamIndicatorsDetected": {
+    "message": "🚨 ALERTA: Este sitio contiene palabras típicas de scams ('gratis', 'gana Bitcoin fácil', etc.). Alta probabilidad de fraude.",
+    "description": "Mensaje de indicadores de scam"
+  },
+  
+  "currentSite": {
+    "message": "Sitio actual",
+    "description": "Label sitio actual"
+  },
+  "officialSite": {
+    "message": "Sitio oficial",
+    "description": "Label sitio oficial"
+  },
+  
+  "didYouKnow": {
+    "message": "¿Sabías que...",
+    "description": "Título mensaje educativo"
+  },
+  "educationalMessage": {
+    "message": "1 de cada 3 usuarios de criptomonedas ha perdido dinero por phishing. Los sitios falsos imitan a exchanges legítimos para robar tus fondos. Brújula Security te protege detectándolos automáticamente.",
+    "description": "Mensaje educativo (elevator pitch)"
+  },
+  "learnMore": {
+    "message": "Aprende más sobre seguridad cripto",
+    "description": "Enlace a artículo educativo"
+  },
+  
+  "goToOfficialSite": {
+    "message": "Ir a $1 (sitio oficial)",
+    "description": "Botón ir a sitio oficial",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "closeThisPage": {
+    "message": "Cerrar esta página",
+    "description": "Botón cerrar página peligrosa"
+  },
+  "ignoreWarning": {
+    "message": "Ignorar advertencia (no recomendado)",
+    "description": "Botón ignorar advertencia"
+  },
+  
+  "protectedBy": {
+    "message": "Protegido por",
+    "description": "Texto branding"
+  },
+  
+  "about": {
+    "message": "Acerca de",
+    "description": "Pestaña Acerca de"
+  },
+  "statistics": {
+    "message": "Estadísticas",
+    "description": "Pestaña Estadísticas"
+  },
+  "settings": {
+    "message": "Configuración",
+    "description": "Pestaña Configuración"
+  },
+  
+  "aboutTitle": {
+    "message": "Brújula Security",
+    "description": "Título popup Acerca de"
+  },
+  "aboutSubtitle": {
+    "message": "Protección Anti-Phishing Cripto",
+    "description": "Subtítulo popup"
+  },
+  "aboutDescription": {
+    "message": "La primera extensión de seguridad cripto en español. Detecta sitios falsos y te protege ANTES de que conectes tu wallet.",
+    "description": "Descripción en popup"
+  },
+  "howToUseTitle": {
+    "message": "📖 ¿Cómo funciona?",
+    "description": "Título cómo usar"
+  },
+  "howToUseStep1": {
+    "message": "1️⃣ Funciona automáticamente - No tienes que hacer nada. Solo navega como siempre.",
+    "description": "Paso 1 cómo usar"
+  },
+  "howToUseStep2": {
+    "message": "2️⃣ Cuando entres a un sitio cripto, la extensión lo analiza en menos de 0.1 segundos.",
+    "description": "Paso 2 cómo usar"
+  },
+  "howToUseStep3": {
+    "message": "3️⃣ Si el sitio es legítimo (como Binance.com), verás un ✅ verde pequeño arriba a la derecha.",
+    "description": "Paso 3 cómo usar"
+  },
+  "howToUseStep4": {
+    "message": "4️⃣ Si detecta PELIGRO (sitio falso), verás una ALERTA ROJA en toda la pantalla. ¡NO conectes tu wallet!",
+    "description": "Paso 4 cómo usar"
+  },
+  "howToUseStep5": {
+    "message": "5️⃣ Eso es todo. La extensión trabaja por ti 24/7. Tú solo navega tranquilo.",
+    "description": "Paso 5 cómo usar"
+  },
+  "aboutElevatorPitch": {
+    "message": "¿Sabes que 1 de cada 3 usuarios de cripto ha perdido dinero por phishing? Brújula Security te protege detectando sitios falsos ANTES de que conectes tu wallet. Gratis, en español, y sin recopilar tus datos.",
+    "description": "Elevator pitch completo"
+  },
+  "aboutFeatures": {
+    "message": "Características:",
+    "description": "Título características"
+  },
+  "feature1": {
+    "message": "✅ Detección proactiva de typosquatting (binanse.com vs binance.com)",
+    "description": "Feature 1"
+  },
+  "feature2": {
+    "message": "🔍 Identifica sitios cripto desconocidos",
+    "description": "Feature 2"
+  },
+  "feature3": {
+    "message": "🌐 Funciona 100% offline (sin APIs externas)",
+    "description": "Feature 3"
+  },
+  "feature4": {
+    "message": "🔒 100% privado (sin rastreo de datos)",
+    "description": "Feature 4"
+  },
+  "feature5": {
+    "message": "⚡ Alertas instantáneas (<100ms)",
+    "description": "Feature 5"
+  },
+  
+  "followUs": {
+    "message": "Síguenos:",
+    "description": "Texto redes sociales"
+  },
+  "developedBy": {
+    "message": "Desarrollado por el equipo de",
+    "description": "Texto desarrollado por"
+  },
+  "visitWebsite": {
+    "message": "Visitar sitio web",
+    "description": "Botón visitar sitio"
+  },
+  
+  "statsTitle": {
+    "message": "Estadísticas de Protección",
+    "description": "Título estadísticas"
+  },
+  "sitesAnalyzed": {
+    "message": "Sitios analizados",
+    "description": "Label sitios analizados"
+  },
+  "threatsBlocked": {
+    "message": "Amenazas bloqueadas",
+    "description": "Label amenazas bloqueadas"
+  },
+  "lastThreat": {
+    "message": "Última amenaza",
+    "description": "Label última amenaza"
+  },
+  "noThreatsYet": {
+    "message": "¡Ninguna amenaza detectada aún! Sigues protegido.",
+    "description": "Mensaje sin amenazas"
+  },
+  "resetStats": {
+    "message": "Resetear estadísticas",
+    "description": "Botón resetear stats"
+  },
+  
+  "settingsTitle": {
+    "message": "Configuración",
+    "description": "Título configuración"
+  },
+  "language": {
+    "message": "Idioma",
+    "description": "Label idioma"
+  },
+  "languageSpanish": {
+    "message": "Español",
+    "description": "Opción español"
+  },
+  "languageEnglish": {
+    "message": "English",
+    "description": "Opción inglés"
+  },
+  "saveSettings": {
+    "message": "Guardar configuración",
+    "description": "Botón guardar"
+  },
+  
+  "homoglyphAttack": {
+    "message": "🚨 PELIGRO: Este sitio usa caracteres especiales (cirílicos, griegos) para imitar a $1",
+    "description": "Mensaje de ataque con homógrafos",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "domainAddition": {
+    "message": "⚠️ Este dominio añade palabras sospechosas (app, secure, official) a $1",
+    "description": "Mensaje de adición de dominio",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "numberSubstitution": {
+    "message": "⚠️ Este sitio sustituye letras por números (1 por i, 0 por o) para imitar a $1",
+    "description": "Mensaje de sustitución de números",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "suspiciousTLD": {
+    "message": "⚠️ Este sitio usa un dominio de nivel superior ($1) frecuentemente utilizado para scams",
+    "description": "Mensaje de TLD sospechoso",
+    "placeholders": {
+      "tld": {
+        "content": "$1",
+        "example": ".tk"
+      }
+    }
+  },
+  "multipleScamIndicators": {
+    "message": "🚨 PELIGRO: Este sitio contiene $1 palabras sospechosas típicas de scams (gratis, gana, garantizado, etc.)",
+    "description": "Mensaje de múltiples indicadores de scam",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "unknownCryptoSuspiciousTLD": {
+    "message": "⚠️ Sitio cripto no verificado con dominio $1 sospechoso. Procede con extrema precaución.",
+    "description": "Mensaje de sitio cripto con TLD sospechoso",
+    "placeholders": {
+      "tld": {
+        "content": "$1",
+        "example": ".tk"
+      }
+    }
+  },
+  "seedPhraseRequest": {
+    "message": "🚨🚨🚨 PELIGRO EXTREMO: Este sitio solicita tu frase de recuperación o clave privada. NUNCA compartas tu seed phrase con NINGÚN sitio web. Es 100% un scam.",
+    "description": "Mensaje CRÍTICO de solicitud de seed phrase"
+  },
+  
+  "trustThisSite": {
+    "message": "✅ Confío en este sitio",
+    "description": "Botón confiar en sitio"
+  },
+  "neverShowAgain": {
+    "message": "No volver a alertar sobre este sitio",
+    "description": "Texto confiar en sitio"
+  },
+  "addedToWhitelist": {
+    "message": "✅ Sitio agregado a tu lista de confianza. No volveremos a alertarte sobre él.",
+    "description": "Mensaje confirmación whitelist"
+  },
+  
+  "alertsSettings": {
+    "message": "Alertas y Notificaciones",
+    "description": "Sección configuración alertas"
+  },
+  "showBadge": {
+    "message": "Mostrar badge en el icono",
+    "description": "Opción mostrar badge"
+  },
+  "showBadgeDesc": {
+    "message": "Muestra un indicador (!, ?) en el icono de la extensión según el nivel de amenaza",
+    "description": "Descripción badge"
+  },
+  "showVisualAlerts": {
+    "message": "Mostrar alertas visuales en la página",
+    "description": "Opción alertas visuales"
+  },
+  "showVisualAlertsDesc": {
+    "message": "Muestra badges verdes (sitio seguro) y modales rojos/amarillos (amenaza detectada)",
+    "description": "Descripción alertas visuales"
+  },
+  "alertLevel": {
+    "message": "Nivel de alerta",
+    "description": "Label nivel alerta"
+  },
+  "alertLevelAll": {
+    "message": "Todas (ALTA, MEDIA, BAJA)",
+    "description": "Opción todas las alertas"
+  },
+  "alertLevelHighMedium": {
+    "message": "ALTA y MEDIA solamente",
+    "description": "Opción alta y media"
+  },
+  "alertLevelHighOnly": {
+    "message": "Solo ALTA (máxima seguridad)",
+    "description": "Opción solo alta"
+  },
+  
+  "trustedSites": {
+    "message": "Sitios de Confianza",
+    "description": "Sección whitelist"
+  },
+  "trustedSitesDesc": {
+    "message": "Estos sitios nunca mostrarán alertas porque los has marcado como confiables:",
+    "description": "Descripción whitelist"
+  },
+  "noTrustedSites": {
+    "message": "No has marcado ningún sitio como confiable aún.",
+    "description": "Mensaje sin whitelist"
+  },
+  "removeFromWhitelist": {
+    "message": "Eliminar",
+    "description": "Botón eliminar de whitelist"
+  },
+  "clearAllTrusted": {
+    "message": "Limpiar toda la lista",
+    "description": "Botón limpiar whitelist"
+  },
+  
+  "settingsSaved": {
+    "message": "✅ Configuración guardada correctamente",
+    "description": "Mensaje confirmación guardado"
+  },
+  "confirmClearWhitelist": {
+    "message": "¿Eliminar todos los sitios de confianza?",
+    "description": "Confirmación limpiar whitelist"
+  },
+
+  "help": {
+    "message": "Ayuda",
+    "description": "Pestaña ayuda"
+  },
+  "helpBadgesTitle": {
+    "message": "¿Qué significan los badges?",
+    "description": "Título badges ayuda"
+  },
+  "helpGreenBadge": {
+    "message": "✅ Verde:",
+    "description": "Badge verde"
+  },
+  "helpGreenBadgeDesc": {
+    "message": "Sitio verificado oficialmente (Binance, MetaMask, etc.)",
+    "description": "Descripción badge verde"
+  },
+  "helpYellowBadge": {
+    "message": "⚠️ Amarillo:",
+    "description": "Badge amarillo"
+  },
+  "helpYellowBadgeDesc": {
+    "message": "Sitio cripto desconocido o conexión de wallet detectada",
+    "description": "Descripción badge amarillo"
+  },
+  "helpRedBadge": {
+    "message": "🚨 Rojo:",
+    "description": "Badge rojo"
+  },
+  "helpRedBadgeDesc": {
+    "message": "Posible phishing o typosquatting detectado",
+    "description": "Descripción badge rojo"
+  },
+
+  "helpWhitelistTitle": {
+    "message": "¿Cómo agregar sitios de confianza?",
+    "description": "Título whitelist ayuda"
+  },
+  "helpWhitelistDesc": {
+    "message": "Si visitas un sitio seguro pero la extensión lo marca como sospechoso:",
+    "description": "Descripción whitelist"
+  },
+  "helpWhitelistStep1": {
+    "message": "Cuando aparezca el modal rojo, click en '✅ Confío en este sitio'",
+    "description": "Paso 1 whitelist"
+  },
+  "helpWhitelistStep2": {
+    "message": "El sitio se agregará automáticamente a tu lista personal",
+    "description": "Paso 2 whitelist"
+  },
+  "helpWhitelistStep3": {
+    "message": "La próxima vez que lo visites, NO verás alertas",
+    "description": "Paso 3 whitelist"
+  },
+  "helpWhitelistWarning": {
+    "message": "⚠️ Solo marca como confiable sitios que realmente conozcas y uses regularmente",
+    "description": "Advertencia whitelist"
+  },
+
+  "helpTipsTitle": {
+    "message": "Consejos de Seguridad",
+    "description": "Título consejos"
+  },
+  "helpTip1": {
+    "message": "Nunca compartas tu seed phrase con nadie, ni siquiera con soporte",
+    "description": "Consejo 1"
+  },
+  "helpTip2": {
+    "message": "Verifica siempre la URL antes de conectar tu wallet",
+    "description": "Consejo 2"
+  },
+  "helpTip3": {
+    "message": "Si algo suena demasiado bueno para ser verdad, probablemente es scam",
+    "description": "Consejo 3"
+  },
+  "helpTip4": {
+    "message": "Usa wallets con confirmación de transacciones para mayor seguridad",
+    "description": "Consejo 4"
+  },
+
+  "helpBlogPromo": {
+    "message": "💡 Aprende más sobre seguridad cripto con nuestros artículos educativos en el blog de Brújula Cripto.",
+    "description": "Promoción del blog"
+  },
+  "helpBlogButton": {
+    "message": "Visitar Blog",
+    "description": "Botón visitar blog"
+  },
+
+  "helpPrivacyTitle": {
+    "message": "Política de Privacidad",
+    "description": "Título política de privacidad"
+  },
+  "helpPrivacyDesc": {
+    "message": "Consulta nuestra política de privacidad completa para saber cómo protegemos tus datos y qué información recopila la extensión.",
+    "description": "Descripción política de privacidad"
+  },
+  "helpPrivacyButton": {
+    "message": "Ver Política de Privacidad",
+    "description": "Botón política de privacidad"
+  }
+}
