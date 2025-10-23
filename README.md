@@ -37,5 +37,5 @@ He elegido la **Licencia MIT**. En resumen, significa que puedes hacer casi lo q
 
 <div align="center">
   <p><strong>Hecho con ❤️ por JuanLu de [ApisDom.com](https://apisdom.com/) para Brújula Cripto</strong></p>
-  <a href="https://brujulacripto.com">Mi Web</a> • <a href="https://x.com/BrujulaCripto">Mi Twitter</a>
+  <a href="https://brujulacrypto.com">Mi Web</a> • <a href="https://x.com/BrujulaCripto">Mi Twitter</a>
 </div>
