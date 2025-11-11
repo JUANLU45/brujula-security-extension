@@ -1,0 +1,765 @@
+/**
+ * Brújula Security - Alert Styles
+ * Estilos para el sistema de alertas inyectado
+ */
+
+/* ============================================
+   BADGE VERDE (Sitio Verificado)
+   ============================================ */
+#brujula-security-badge {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 2147483647;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+#brujula-security-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================
+   ALERTA AMARILLA (Precaución)
+   ============================================ */
+#brujula-security-alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  margin-top: 20px;
+  background: #FFF3CD;
+  border: 2px solid #FFC107;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 2147483646;
+  animation: brujulaSlideDown 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.brujula-alert-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+}
+
+.brujula-alert-icon {
+  font-size: 32px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.brujula-alert-text {
+  flex: 1;
+}
+
+.brujula-alert-text h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #856404;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.brujula-alert-text p {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #664d03;
+  font-weight: 500;
+}
+
+.brujula-alert-tip {
+  font-size: 13px !important;
+  font-style: italic;
+  color: #856404 !important;
+}
+
+.brujula-alert-links {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(133, 100, 4, 0.2);
+}
+
+.brujula-link-blog {
+  display: inline-block;
+  color: #856404;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.brujula-link-blog:hover {
+  background-color: rgba(255, 193, 7, 0.3);
+  color: #664d03;
+  text-decoration: underline;
+}
+
+.brujula-link-blog:focus {
+  outline: 2px solid #FFC107;
+  outline-offset: 2px;
+}
+
+.brujula-alert-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #856404;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.brujula-alert-close:hover {
+  transform: rotate(90deg);
+}
+
+.brujula-alert-close:focus {
+  outline: 2px solid #FFC107;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   ALERTA ROJA (Peligro)
+   ============================================ */
+#brujula-security-danger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 2147483647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  animation: brujulaFadeIn 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.brujula-alert-red-modal {
+  background: white;
+  border-radius: 16px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
+  animation: brujulaScaleIn 0.3s ease;
+}
+
+.brujula-alert-red-header {
+  background: linear-gradient(135deg, #F44336 0%, #d32f2f 100%);
+  color: white;
+  padding: 32px 32px 24px;
+  border-radius: 16px 16px 0 0;
+  text-align: center;
+}
+
+.brujula-alert-red-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  animation: brujulaPulse 2s infinite;
+}
+
+.brujula-alert-red-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.brujula-alert-red-body {
+  padding: 32px;
+}
+
+.brujula-alert-red-message {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.brujula-alert-comparison {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.brujula-domain-fake,
+.brujula-domain-real {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.brujula-domain-fake {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.brujula-label {
+  font-size: 15px;
+  color: #555;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.brujula-value {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'SF Mono', 'Monaco', 'Consolas', 'Courier New', monospace;
+  letter-spacing: -0.3px;
+}
+
+.brujula-domain-fake .brujula-value {
+  color: #F44336;
+}
+
+.brujula-domain-real .brujula-value {
+  color: #4CAF50;
+}
+
+.brujula-alert-education {
+  background: #E3F2FD;
+  border-left: 4px solid #2196F3;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.brujula-alert-education h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1976D2;
+}
+
+.brujula-alert-education p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.brujula-alert-education a {
+  color: #2196F3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.brujula-alert-education a:hover {
+  text-decoration: underline;
+}
+
+.brujula-alert-red-footer {
+  padding: 24px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brujula-btn-primary,
+.brujula-btn-danger,
+.brujula-btn-secondary {
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  letter-spacing: -0.3px;
+}
+
+.brujula-btn-primary {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.brujula-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+}
+
+.brujula-btn-primary:focus {
+  outline: 3px solid rgba(76, 175, 80, 0.5);
+  outline-offset: 2px;
+}
+
+.brujula-btn-danger {
+  background: linear-gradient(135deg, #F44336 0%, #d32f2f 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+}
+
+.brujula-btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(244, 67, 54, 0.4);
+}
+
+.brujula-btn-danger:focus {
+  outline: 3px solid rgba(244, 67, 54, 0.5);
+  outline-offset: 2px;
+}
+
+.brujula-btn-secondary {
+  background: #f5f5f5;
+  color: #666;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brujula-btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+.brujula-btn-secondary:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.2);
+  outline-offset: 2px;
+}
+
+.brujula-btn-trust {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: white;
+  font-weight: 700;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+  letter-spacing: -0.3px;
+}
+
+.brujula-btn-trust:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+}
+
+.brujula-btn-trust:focus {
+  outline: 3px solid rgba(72, 187, 120, 0.5);
+  outline-offset: 2px;
+}
+
+.brujula-alert-branding {
+  text-align: center;
+  padding: 16px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 13px;
+  color: #999;
+}
+
+.brujula-alert-branding strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+@keyframes brujulaSlideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes brujulaFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes brujulaScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes brujulaPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 640px) {
+  #brujula-security-badge {
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  #brujula-security-alert {
+    width: 95%;
+    margin-top: 10px;
+  }
+  
+  .brujula-alert-content {
+    padding: 16px;
+  }
+  
+  .brujula-alert-text h3 {
+    font-size: 16px;
+  }
+  
+  .brujula-alert-text p {
+    font-size: 13px;
+  }
+  
+  .brujula-alert-red-header {
+    padding: 24px 20px 20px;
+  }
+  
+  .brujula-alert-red-icon {
+    font-size: 48px;
+  }
+  
+  .brujula-alert-red-header h2 {
+    font-size: 20px;
+  }
+  
+  .brujula-alert-red-body {
+    padding: 20px;
+  }
+  
+  .brujula-alert-red-footer {
+    padding: 16px 20px 24px;
+  }
+  
+  .brujula-btn-primary,
+  .brujula-btn-danger,
+  .brujula-btn-secondary {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
+
+/* ============================================
+   ACCESIBILIDAD
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  #brujula-security-badge,
+  #brujula-security-alert,
+  #brujula-security-danger,
+  .brujula-alert-red-modal,
+  .brujula-alert-red-icon {
+    animation: none !important;
+  }
+  
+  .brujula-alert-close:hover {
+    transform: none;
+  }
+  
+  .brujula-btn-primary:hover,
+  .brujula-btn-danger:hover {
+    transform: none;
+  }
+}
+
+/* Modo de alto contraste */
+@media (prefers-contrast: high) {
+  #brujula-security-badge {
+    border: 2px solid white;
+  }
+
+  #brujula-security-alert {
+    border-width: 3px;
+  }
+
+  .brujula-alert-red-modal {
+    border: 3px solid #F44336;
+  }
+}
+
+/* ============================================
+   CARTELES DE CONFIRMACIÓN (NUEVOS)
+   ============================================ */
+
+/* Confirmación de éxito (verde) */
+.brujula-confirmation-success {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%) !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 24px !important;
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(72, 187, 120, 0.4) !important;
+}
+
+.brujula-confirmation-success .brujula-confirmation-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+  animation: brujulaSuccessPop 0.5s ease;
+}
+
+.brujula-confirmation-success .brujula-confirmation-text h3 {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+.brujula-confirmation-success .brujula-confirmation-domain {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin: 12px 0 !important;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+}
+
+.brujula-confirmation-success .brujula-confirmation-message {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin: 8px 0 0 0 !important;
+  font-weight: 500;
+}
+
+/* Confirmación de información (azul) */
+.brujula-confirmation-info {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 24px !important;
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4) !important;
+}
+
+.brujula-confirmation-info .brujula-confirmation-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.brujula-confirmation-info .brujula-confirmation-text h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: -0.5px;
+}
+
+.brujula-confirmation-info .brujula-confirmation-domain {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin: 12px 0 !important;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+}
+
+/* Confirmación de error (rojo) */
+.brujula-confirmation-error {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 24px !important;
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(239, 68, 68, 0.4) !important;
+}
+
+.brujula-confirmation-error .brujula-confirmation-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.brujula-confirmation-error .brujula-confirmation-text h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: -0.5px;
+}
+
+.brujula-confirmation-error .brujula-confirmation-text p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin: 0 !important;
+}
+
+/* Modal de confirmación (para overlay rojo) */
+.brujula-confirmation-modal {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%) !important;
+  color: white !important;
+  padding: 0 !important;
+}
+
+.brujula-confirmation-header {
+  background: transparent !important;
+  padding: 32px 32px 24px !important;
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.brujula-confirmation-header .brujula-confirmation-icon {
+  font-size: 72px;
+  margin-bottom: 16px;
+  animation: brujulaSuccessPop 0.5s ease;
+}
+
+.brujula-confirmation-header h2 {
+  margin: 0 !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: white !important;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+.brujula-confirmation-body {
+  padding: 0 32px 32px !important;
+  text-align: center;
+}
+
+.brujula-confirmation-body .brujula-confirmation-message {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin: 0 0 16px 0 !important;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.brujula-confirmation-body .brujula-confirmation-domain {
+  font-size: 18px;
+  font-weight: 700;
+  color: white !important;
+  margin: 0 !important;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Variantes de color para modales de confirmación */
+.brujula-confirmation-info-modal {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+}
+
+.brujula-confirmation-error-modal {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+}
+
+/* Animación de éxito */
+@keyframes brujulaSuccessPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive para confirmaciones */
+@media (max-width: 640px) {
+  .brujula-confirmation-success,
+  .brujula-confirmation-info,
+  .brujula-confirmation-error {
+    padding: 20px !important;
+  }
+
+  .brujula-confirmation-success .brujula-confirmation-icon,
+  .brujula-confirmation-info .brujula-confirmation-icon,
+  .brujula-confirmation-error .brujula-confirmation-icon {
+    font-size: 48px;
+  }
+
+  .brujula-confirmation-success .brujula-confirmation-text h3,
+  .brujula-confirmation-info .brujula-confirmation-text h3,
+  .brujula-confirmation-error .brujula-confirmation-text h3 {
+    font-size: 18px;
+  }
+
+  .brujula-confirmation-success .brujula-confirmation-domain,
+  .brujula-confirmation-info .brujula-confirmation-domain {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .brujula-confirmation-header {
+    padding: 24px 20px 20px !important;
+  }
+
+  .brujula-confirmation-header .brujula-confirmation-icon {
+    font-size: 56px;
+  }
+
+  .brujula-confirmation-header h2 {
+    font-size: 22px !important;
+  }
+
+  .brujula-confirmation-body {
+    padding: 0 20px 24px !important;
+  }
+
+  .brujula-confirmation-body .brujula-confirmation-domain {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+
+  .brujula-confirmation-body .brujula-confirmation-message {
+    font-size: 14px;
+  }
+}

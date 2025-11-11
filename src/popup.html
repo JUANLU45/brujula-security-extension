@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brújula Security - Protección Anti-Phishing Cripto">
+  <title>Brújula Security</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Header con logo -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="../icons/logo-48.png" alt="Brújula Cripto Logo" class="logo">
+      <h1 id="aboutTitle"></h1>
+    </div>
+    <p id="aboutSubtitle"></p>
+  </header>
+
+  <!-- Tabs de navegación -->
+  <nav class="tabs" role="tablist">
+    <button class="tab active" role="tab" aria-selected="true" aria-controls="about-panel" id="tab-about">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+      </svg>
+      <span id="tab-about-text"></span>
+    </button>
+    
+    <button class="tab" role="tab" aria-selected="false" aria-controls="stats-panel" id="tab-stats">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="12" y1="20" x2="12" y2="10"></line>
+        <line x1="18" y1="20" x2="18" y2="4"></line>
+        <line x1="6" y1="20" x2="6" y2="16"></line>
+      </svg>
+      <span id="tab-stats-text"></span>
+    </button>
+    
+    <button class="tab" role="tab" aria-selected="false" aria-controls="settings-panel" id="tab-settings">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M12 1v6m0 6v6M4.2 4.2l4.2 4.2m5.6 5.6l4.2 4.2M1 12h6m6 0h6M4.2 19.8l4.2-4.2m5.6-5.6l4.2-4.2"></path>
+      </svg>
+      <span id="tab-settings-text"></span>
+    </button>
+
+    <button class="tab" role="tab" aria-selected="false" aria-controls="help-panel" id="tab-help">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+      </svg>
+      <span id="tab-help-text"></span>
+    </button>
+  </nav>
+
+  <!-- Panel: Acerca de -->
+  <div class="tab-panel active" role="tabpanel" id="about-panel">
+    <div class="about-section">
+      <p id="aboutDescription"></p>
+      
+      <div class="elevator-pitch">
+        <p id="aboutElevatorPitch"></p>
+      </div>
+      
+      <div class="how-to-use">
+        <h3 id="howToUseTitle"></h3>
+        <ol class="how-to-steps">
+          <li id="howToUseStep1"></li>
+          <li id="howToUseStep2"></li>
+          <li id="howToUseStep3"></li>
+          <li id="howToUseStep4"></li>
+          <li id="howToUseStep5"></li>
+        </ol>
+      </div>
+      
+      <div class="features">
+        <h3 id="aboutFeatures"></h3>
+        <ul>
+          <li id="feature1"></li>
+          <li id="feature2"></li>
+          <li id="feature3"></li>
+          <li id="feature4"></li>
+          <li id="feature5"></li>
+        </ul>
+      </div>
+      
+      <div class="social-section">
+        <h3 id="followUs"></h3>
+        <div class="social-links">
+          <a href="https://x.com/BrujulaCripto" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://t.me/BrujulaCriptoAlertas" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.10.08.12.19.13.27-.01.06.01.24 0 .38z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@BrujulaCripto" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="branding">
+        <p><span id="developedBy"></span> <strong>Brújula Cripto</strong></p>
+        <a href="https://brujulacrypto.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span id="visitWebsite"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel: Estadísticas -->
+  <div class="tab-panel" role="tabpanel" id="stats-panel" hidden>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="sites-analyzed-value">0</div>
+        <div class="stat-label" id="sitesAnalyzed"></div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-value" id="threats-blocked-value">0</div>
+        <div class="stat-label" id="threatsBlocked"></div>
+      </div>
+    </div>
+    
+    <div class="last-threat-section">
+      <h3 id="lastThreat"></h3>
+      <div id="last-threat-content"></div>
+    </div>
+    
+    <button class="btn btn-danger" id="reset-stats">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="1 4 1 10 7 10"></polyline>
+        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+      </svg>
+      <span id="resetStats"></span>
+    </button>
+  </div>
+
+  <!-- Panel: Configuración -->
+  <div class="tab-panel" role="tabpanel" id="settings-panel" hidden>
+    <!-- Idioma -->
+    <div class="setting-group">
+      <h3 id="languageSection">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        <span id="language"></span>
+      </h3>
+      <div class="language-info-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <p id="languageAutoDetectInfo"></p>
+      </div>
+    </div>
+
+    <!-- Alertas y Notificaciones -->
+    <div class="setting-group">
+      <h3 id="alertsSettingsSection">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        </svg>
+        <span id="alertsSettings"></span>
+      </h3>
+      <p class="setting-description" id="alertsSettingsDesc"></p>
+
+      <!-- Mostrar badge -->
+      <div class="setting-item">
+        <label class="setting-checkbox">
+          <input type="checkbox" id="show-badge-checkbox" checked>
+          <span class="checkbox-label">
+            <strong id="showBadge"></strong>
+            <small id="showBadgeDesc"></small>
+          </span>
+        </label>
+      </div>
+
+      <!-- Mostrar alertas visuales -->
+      <div class="setting-item">
+        <label class="setting-checkbox">
+          <input type="checkbox" id="show-visual-alerts-checkbox" checked>
+          <span class="checkbox-label">
+            <strong id="showVisualAlerts"></strong>
+            <small id="showVisualAlertsDesc"></small>
+          </span>
+        </label>
+      </div>
+
+      <!-- Nivel de alerta -->
+      <div class="setting-item">
+        <label for="alert-level-select">
+          <strong id="alertLevel"></strong>
+        </label>
+        <select id="alert-level-select" class="setting-select">
+          <option value="all" id="alertLevelAll"></option>
+          <option value="high-medium" id="alertLevelHighMedium"></option>
+          <option value="high-only" id="alertLevelHighOnly"></option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Sitios de Confianza -->
+    <div class="setting-group">
+      <h3 id="trustedSitesSection">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <path d="M9 12l2 2 4-4"></path>
+        </svg>
+        <span id="trustedSites"></span>
+      </h3>
+      <p class="setting-description" id="trustedSitesDesc"></p>
+
+      <div id="whitelist-container" class="whitelist-list">
+        <p class="no-trusted-sites" id="noTrustedSites"></p>
+      </div>
+
+      <button class="btn btn-danger btn-sm" id="clear-whitelist-btn" style="display: none;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="3 6 5 6 21 6"></polyline>
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+        </svg>
+        <span id="clearAllTrusted"></span>
+      </button>
+    </div>
+
+    <!-- Botón Guardar -->
+    <div class="setting-actions">
+      <button class="btn btn-primary btn-block" id="save-settings">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+          <polyline points="7 3 7 8 15 8"></polyline>
+        </svg>
+        <span id="saveSettings"></span>
+      </button>
+    </div>
+
+    <!-- Notificación de guardado -->
+    <div id="settings-notification" class="notification" style="display: none;"></div>
+  </div>
+
+  <!-- Panel: Ayuda -->
+  <div class="tab-panel" role="tabpanel" id="help-panel" hidden>
+    <div class="help-section">
+      <div class="help-card">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+          <span id="helpBadgesTitle"></span>
+        </h3>
+        <ul>
+          <li><strong id="helpGreenBadge"></strong> <span id="helpGreenBadgeDesc"></span></li>
+          <li><strong id="helpYellowBadge"></strong> <span id="helpYellowBadgeDesc"></span></li>
+          <li><strong id="helpRedBadge"></strong> <span id="helpRedBadgeDesc"></span></li>
+        </ul>
+      </div>
+
+      <div class="help-card">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span id="helpWhitelistTitle"></span>
+        </h3>
+        <p id="helpWhitelistDesc"></p>
+        <ol>
+          <li id="helpWhitelistStep1"></li>
+          <li id="helpWhitelistStep2"></li>
+          <li id="helpWhitelistStep3"></li>
+        </ol>
+        <div class="warning-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span id="helpWhitelistWarning"></span>
+        </div>
+      </div>
+
+      <div class="help-card">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 16v-4"></path>
+            <path d="M12 8h.01"></path>
+          </svg>
+          <span id="helpTipsTitle"></span>
+        </h3>
+        <ul>
+          <li id="helpTip1"></li>
+          <li id="helpTip2"></li>
+          <li id="helpTip3"></li>
+          <li id="helpTip4"></li>
+        </ul>
+        <div class="help-blog-promo">
+          <p id="helpBlogPromo"></p>
+          <a href="https://brujulacrypto.com/blog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span id="helpBlogButton"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="help-card">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+          <span id="helpPrivacyTitle"></span>
+        </h3>
+        <p id="helpPrivacyDesc"></p>
+        <a href="https://brujulacrypto.com/legal/privacidad-extension" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span id="helpPrivacyButton"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

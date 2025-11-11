@@ -1,0 +1,500 @@
+{
+  "extensionName": {
+    "message": "Brújula Security - Crypto Anti-Phishing Protection",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "The first Spanish-native crypto security extension. Detects fake sites BEFORE you connect your wallet. 100% free and private.",
+    "description": "Extension description for Chrome Web Store"
+  },
+  
+  "verified": {
+    "message": "Verified",
+    "description": "Green badge text"
+  },
+  "verifiedSite": {
+    "message": "Verified Site",
+    "description": "Verified site message"
+  },
+  
+  "caution": {
+    "message": "⚠️ Caution",
+    "description": "Yellow alert title"
+  },
+  "cautionTip": {
+    "message": "Never share your seed phrase or passwords with anyone.",
+    "description": "Caution tip"
+  },
+  "close": {
+    "message": "Close",
+    "description": "Close button"
+  },
+  
+  "phishingDetected": {
+    "message": "🚨 POSSIBLE PHISHING DETECTED",
+    "description": "Red alert title"
+  },
+  "typosquattingDetected": {
+    "message": "This site is very similar to $1. Did you mean to visit the official site?",
+    "description": "Typosquatting message",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "unknownCryptoSite": {
+    "message": "⚠️ UNVERIFIED CRYPTO SITE - This site is not in our database of legitimate exchanges and wallets. Proceed with extreme caution.",
+    "description": "Unknown crypto site message"
+  },
+  "unknownCryptoWithWallet": {
+    "message": "🚨 DANGER: Unknown crypto site requesting wallet connection. NEVER connect your wallet to unverified sites.",
+    "description": "Unknown site with wallet connection message"
+  },
+  "walletConnectionDetected": {
+    "message": "⚠️ This site is requesting wallet connection. Verify it's legitimate before connecting.",
+    "description": "Wallet connection detected message"
+  },
+  "walletConnectionNonCrypto": {
+    "message": "⚠️ This site (non-crypto specialized) is requesting wallet connection. Proceed with caution.",
+    "description": "Wallet connection on non-crypto site message"
+  },
+  "scamIndicatorsDetected": {
+    "message": "🚨 ALERT: This site contains typical scam words ('free', 'earn Bitcoin easily', etc.). High fraud probability.",
+    "description": "Scam indicators message"
+  },
+  
+  "currentSite": {
+    "message": "Current site",
+    "description": "Current site label"
+  },
+  "officialSite": {
+    "message": "Official site",
+    "description": "Official site label"
+  },
+  
+  "didYouKnow": {
+    "message": "Did you know?",
+    "description": "Educational message title"
+  },
+  "educationalMessage": {
+    "message": "1 in 3 cryptocurrency users has lost money to phishing. Fake sites imitate legitimate exchanges to steal your funds. Brújula Security protects you by detecting them automatically.",
+    "description": "Educational message (elevator pitch)"
+  },
+  "learnMore": {
+    "message": "Learn more about crypto security",
+    "description": "Link to educational article"
+  },
+  
+  "goToOfficialSite": {
+    "message": "Go to $1 (official site)",
+    "description": "Go to official site button",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "closeThisPage": {
+    "message": "Close this page",
+    "description": "Close dangerous page button"
+  },
+  "ignoreWarning": {
+    "message": "Ignore warning (not recommended)",
+    "description": "Ignore warning button"
+  },
+  
+  "protectedBy": {
+    "message": "Protected by",
+    "description": "Branding text"
+  },
+  
+  "about": {
+    "message": "About",
+    "description": "About tab"
+  },
+  "statistics": {
+    "message": "Statistics",
+    "description": "Statistics tab"
+  },
+  "settings": {
+    "message": "Settings",
+    "description": "Settings tab"
+  },
+  
+  "aboutTitle": {
+    "message": "Brújula Security",
+    "description": "About popup title"
+  },
+  "aboutSubtitle": {
+    "message": "Crypto Anti-Phishing Protection",
+    "description": "Popup subtitle"
+  },
+  "aboutDescription": {
+    "message": "The first Spanish-native crypto security extension. Detects fake sites and protects you BEFORE you connect your wallet.",
+    "description": "Popup description"
+  },
+  "howToUseTitle": {
+    "message": "📖 How does it work?",
+    "description": "How to use title"
+  },
+  "howToUseStep1": {
+    "message": "1️⃣ Works automatically - You don't have to do anything. Just browse as usual.",
+    "description": "How to use step 1"
+  },
+  "howToUseStep2": {
+    "message": "2️⃣ When you visit a crypto site, the extension analyzes it in less than 0.1 seconds.",
+    "description": "How to use step 2"
+  },
+  "howToUseStep3": {
+    "message": "3️⃣ If the site is legitimate (like Binance.com), you'll see a small green ✅ at the top right.",
+    "description": "How to use step 3"
+  },
+  "howToUseStep4": {
+    "message": "4️⃣ If it detects DANGER (fake site), you'll see a full-screen RED ALERT. DON'T connect your wallet!",
+    "description": "How to use step 4"
+  },
+  "howToUseStep5": {
+    "message": "5️⃣ That's it. The extension works for you 24/7. You just browse safely.",
+    "description": "How to use step 5"
+  },
+  "aboutElevatorPitch": {
+    "message": "Did you know 1 in 3 crypto users has lost money to phishing? Brújula Security protects you by detecting fake sites BEFORE you connect your wallet. Free, in Spanish, and without collecting your data.",
+    "description": "Full elevator pitch"
+  },
+  "aboutFeatures": {
+    "message": "Features:",
+    "description": "Features title"
+  },
+  "feature1": {
+    "message": "✅ Proactive typosquatting detection (binanse.com vs binance.com)",
+    "description": "Feature 1"
+  },
+  "feature2": {
+    "message": "🔍 Identifies unknown crypto sites",
+    "description": "Feature 2"
+  },
+  "feature3": {
+    "message": "🌐 Works 100% offline (no external APIs)",
+    "description": "Feature 3"
+  },
+  "feature4": {
+    "message": "🔒 100% private (no data tracking)",
+    "description": "Feature 4"
+  },
+  "feature5": {
+    "message": "⚡ Instant alerts (<100ms)",
+    "description": "Feature 5"
+  },
+  
+  "followUs": {
+    "message": "Follow us:",
+    "description": "Social media text"
+  },
+  "developedBy": {
+    "message": "Developed by the team at",
+    "description": "Developed by text"
+  },
+  "visitWebsite": {
+    "message": "Visit website",
+    "description": "Visit website button"
+  },
+  
+  "statsTitle": {
+    "message": "Protection Statistics",
+    "description": "Statistics title"
+  },
+  "sitesAnalyzed": {
+    "message": "Sites analyzed",
+    "description": "Sites analyzed label"
+  },
+  "threatsBlocked": {
+    "message": "Threats blocked",
+    "description": "Threats blocked label"
+  },
+  "lastThreat": {
+    "message": "Last threat",
+    "description": "Last threat label"
+  },
+  "noThreatsYet": {
+    "message": "No threats detected yet! You remain protected.",
+    "description": "No threats message"
+  },
+  "resetStats": {
+    "message": "Reset statistics",
+    "description": "Reset stats button"
+  },
+  
+  "settingsTitle": {
+    "message": "Settings",
+    "description": "Settings title"
+  },
+  "language": {
+    "message": "Language",
+    "description": "Language label"
+  },
+  "languageAutoDetectInfo": {
+    "message": "The extension automatically detects your Chrome browser language. To change the language, go to chrome://settings/languages and set your preferred language.",
+    "description": "Information about automatic language detection"
+  },
+  "languageSpanish": {
+    "message": "Español",
+    "description": "Spanish option"
+  },
+  "languageEnglish": {
+    "message": "English",
+    "description": "English option"
+  },
+  "saveSettings": {
+    "message": "Save settings",
+    "description": "Save button"
+  },
+  
+  "homoglyphAttack": {
+    "message": "🚨 DANGER: This site uses special characters (Cyrillic, Greek) to imitate $1",
+    "description": "Homoglyph attack message",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "domainAddition": {
+    "message": "⚠️ This domain adds suspicious words (app, secure, official) to $1",
+    "description": "Domain addition message",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "numberSubstitution": {
+    "message": "⚠️ This site substitutes letters with numbers (1 for i, 0 for o) to imitate $1",
+    "description": "Number substitution message",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "binance.com"
+      }
+    }
+  },
+  "suspiciousTLD": {
+    "message": "⚠️ This site uses a top-level domain ($1) frequently used for scams",
+    "description": "Suspicious TLD message",
+    "placeholders": {
+      "tld": {
+        "content": "$1",
+        "example": ".tk"
+      }
+    }
+  },
+  "multipleScamIndicators": {
+    "message": "🚨 DANGER: This site contains $1 suspicious words typical of scams (free, earn, guaranteed, etc.)",
+    "description": "Multiple scam indicators message",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "unknownCryptoSuspiciousTLD": {
+    "message": "⚠️ Unverified crypto site with suspicious $1 domain. Proceed with extreme caution.",
+    "description": "Crypto site with suspicious TLD message",
+    "placeholders": {
+      "tld": {
+        "content": "$1",
+        "example": ".tk"
+      }
+    }
+  },
+  "seedPhraseRequest": {
+    "message": "🚨🚨🚨 EXTREME DANGER: This site is asking for your recovery phrase or private key. NEVER share your seed phrase with ANY website. This is 100% a scam.",
+    "description": "CRITICAL seed phrase request message"
+  },
+  
+  "trustThisSite": {
+    "message": "✅ I trust this site",
+    "description": "Trust site button"
+  },
+  "neverShowAgain": {
+    "message": "Don't alert me about this site again",
+    "description": "Trust site text"
+  },
+  "addedToWhitelist": {
+    "message": "✅ Site added to your trusted list. We won't alert you about it again.",
+    "description": "Whitelist confirmation message"
+  },
+  
+  "alertsSettings": {
+    "message": "Alerts & Notifications",
+    "description": "Alerts settings section"
+  },
+  "showBadge": {
+    "message": "Show badge on icon",
+    "description": "Show badge option"
+  },
+  "showBadgeDesc": {
+    "message": "Displays an indicator (!, ?) on the extension icon based on threat level",
+    "description": "Badge description"
+  },
+  "showVisualAlerts": {
+    "message": "Show visual alerts on page",
+    "description": "Visual alerts option"
+  },
+  "showVisualAlertsDesc": {
+    "message": "Shows green badges (safe site) and red/yellow modals (threat detected)",
+    "description": "Visual alerts description"
+  },
+  "alertLevel": {
+    "message": "Alert level",
+    "description": "Alert level label"
+  },
+  "alertLevelAll": {
+    "message": "All (HIGH, MEDIUM, LOW)",
+    "description": "All alerts option"
+  },
+  "alertLevelHighMedium": {
+    "message": "HIGH and MEDIUM only",
+    "description": "High and medium option"
+  },
+  "alertLevelHighOnly": {
+    "message": "Only HIGH (maximum security)",
+    "description": "High only option"
+  },
+  
+  "trustedSites": {
+    "message": "Trusted Sites",
+    "description": "Whitelist section"
+  },
+  "trustedSitesDesc": {
+    "message": "These sites will never show alerts because you marked them as trusted:",
+    "description": "Whitelist description"
+  },
+  "noTrustedSites": {
+    "message": "You haven't marked any sites as trusted yet.",
+    "description": "No whitelist message"
+  },
+  "removeFromWhitelist": {
+    "message": "Remove",
+    "description": "Remove from whitelist button"
+  },
+  "clearAllTrusted": {
+    "message": "Clear entire list",
+    "description": "Clear whitelist button"
+  },
+  
+  "settingsSaved": {
+    "message": "✅ Settings saved successfully",
+    "description": "Settings saved message"
+  },
+  "confirmClearWhitelist": {
+    "message": "Remove all trusted sites?",
+    "description": "Clear whitelist confirmation"
+  },
+
+  "help": {
+    "message": "Help",
+    "description": "Help tab"
+  },
+  "helpBadgesTitle": {
+    "message": "What do the badges mean?",
+    "description": "Badges help title"
+  },
+  "helpGreenBadge": {
+    "message": "✅ Green:",
+    "description": "Green badge"
+  },
+  "helpGreenBadgeDesc": {
+    "message": "Officially verified site (Binance, MetaMask, etc.)",
+    "description": "Green badge description"
+  },
+  "helpYellowBadge": {
+    "message": "⚠️ Yellow:",
+    "description": "Yellow badge"
+  },
+  "helpYellowBadgeDesc": {
+    "message": "Unknown crypto site or wallet connection detected",
+    "description": "Yellow badge description"
+  },
+  "helpRedBadge": {
+    "message": "🚨 Red:",
+    "description": "Red badge"
+  },
+  "helpRedBadgeDesc": {
+    "message": "Possible phishing or typosquatting detected",
+    "description": "Red badge description"
+  },
+
+  "helpWhitelistTitle": {
+    "message": "How to add trusted sites?",
+    "description": "Whitelist help title"
+  },
+  "helpWhitelistDesc": {
+    "message": "If you visit a safe site but the extension marks it as suspicious:",
+    "description": "Whitelist description"
+  },
+  "helpWhitelistStep1": {
+    "message": "When the red modal appears, click '✅ I trust this site'",
+    "description": "Whitelist step 1"
+  },
+  "helpWhitelistStep2": {
+    "message": "The site will be automatically added to your personal list",
+    "description": "Whitelist step 2"
+  },
+  "helpWhitelistStep3": {
+    "message": "Next time you visit it, you WON'T see alerts",
+    "description": "Whitelist step 3"
+  },
+  "helpWhitelistWarning": {
+    "message": "⚠️ Only mark sites as trusted that you really know and use regularly",
+    "description": "Whitelist warning"
+  },
+
+  "helpTipsTitle": {
+    "message": "Security Tips",
+    "description": "Tips title"
+  },
+  "helpTip1": {
+    "message": "Never share your seed phrase with anyone, not even support",
+    "description": "Tip 1"
+  },
+  "helpTip2": {
+    "message": "Always verify the URL before connecting your wallet",
+    "description": "Tip 2"
+  },
+  "helpTip3": {
+    "message": "If something sounds too good to be true, it's probably a scam",
+    "description": "Tip 3"
+  },
+  "helpTip4": {
+    "message": "Use wallets with transaction confirmation for greater security",
+    "description": "Tip 4"
+  },
+
+  "helpBlogPromo": {
+    "message": "💡 Learn more about crypto security with our educational articles on Brújula Cripto's blog.",
+    "description": "Blog promotion"
+  },
+  "helpBlogButton": {
+    "message": "Visit Blog",
+    "description": "Visit blog button"
+  },
+
+  "helpPrivacyTitle": {
+    "message": "Privacy Policy",
+    "description": "Privacy policy title"
+  },
+  "helpPrivacyDesc": {
+    "message": "Check our complete privacy policy to learn how we protect your data and what information the extension collects.",
+    "description": "Privacy policy description"
+  },
+  "helpPrivacyButton": {
+    "message": "View Privacy Policy",
+    "description": "Privacy policy button"
+  }
+}
